@@ -20,9 +20,16 @@ public class Main {
 
         rubberArray.append(3);
         System.out.println(rubberArray);
+        System.out.println("----------------");
+        rubberArray.appendRange(new int[]{6, 4, 5});
+        rubberArray.appendRange(99, 44, 22);
+        System.out.println("-----------");
 
-        rubberArray.appendRange(new int[] { 6, 4, 5 });
-        rubberArray.appendRange( 99,44,22);
+        rubberArray.remove(22);
+        System.out.println(rubberArray);
+        System.out.println("-----------");
+
+        rubberArray.removeAt(0);
         System.out.println(rubberArray);
     }
 }
