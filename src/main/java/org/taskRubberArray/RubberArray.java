@@ -10,8 +10,6 @@ public class RubberArray {
         this.size = 0;
     }
 
-
-
     public void append (int item){
         this.size++;
         int[] newArray = new int[this.size];
