@@ -39,19 +39,7 @@ public class RubberArray {
         if (pos == -1) {
             return;
         }
-        size--;
-
-        int[] temp = new int[size];
-
-        for (int i = 0; i < pos; i++) {
-            temp[i] = array[i];
-        }
-
-        for (int i = pos; i < size; i++) {
-            temp[i] = array[i + 1];
-        }
-        array = temp;
-
+        removeAt(pos);
     }
 
     public void removeAt(int position) {
