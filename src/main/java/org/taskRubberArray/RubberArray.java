@@ -54,6 +54,25 @@ public class RubberArray {
 
     }
 
+    public void removeAt(int position) {
+        if(position<0 || position >= size){
+            return;
+        }
+        size--;
+        int[] temp = new int[size];
+
+        for (int i = 0; i < position; i++) {
+            temp[i] = array[i];
+        }
+        for (int i = position; i < size; i++) {
+            temp[i] = array[i + 1];
+        }
+        array = temp;
+    }
+
+
+
+
     @Override
     public String toString() {
         String res = "";
